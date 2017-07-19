@@ -10,9 +10,11 @@ public class Main {
 
     public static void main(String args[]) {
         Creater creater = Creater.create();
-
-        creater.setQuerySearch("밍키넷")
-                .setUsername("12Ylo7");
+        
+        /**
+        * @Parma query - keyword for search tweets, if parm is empty you can crawled all of tweet datas on realtime
+        */
+        creater.setQuerySearch("");
         TwitterCrawler.getTweets(creater);
     }
 }
